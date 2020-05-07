@@ -17,13 +17,11 @@ class AlbumIndex extends React.Component {
                  <ul className="album-gallery">
                      {albums.map((albums, index) => {
                          return (
-                             <div class-name="album-gallery-info">
-                         <a href={`/albums/${albums._id}`}>{albums.title} - {albums.Artist} ({albums.yearReleased})
-                         <p/>
-                        
-                                 <img src={albums.img} className="ind-album-img"/></a>
+                        <li class-name="album-gallery-info">
+                         <a href={`/albums/${albums._id}`}>
+                            <img src={albums.img} className="ind-album-img"/></a>
                                  
-                             </div>
+                        </li>
                          )
                      })}
                  </ul>

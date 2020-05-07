@@ -20,11 +20,13 @@ class BookIndex extends React.Component {
                  <ul className="book-gallery">
                      {books.map((books, index) => {
                          return (
-                             <div class-name="book-gallery-info">
-                                 <a href={`/books/${books._id}`}>{books.title} - Date Finished: {books.dateFinished}
-                                 <img src={books.img} className="ind-book-img"/></a>
-                                 
-                             </div>
+                             <li class-name="book-gallery-info">
+                                 <div className="ind-book-img">
+                                 <a href={`/books/${books._id}`}><img src={books.img} className="ind-book-img"/></a>
+                                 </div>
+                                 <p/>
+                                 {/* {books.title} - Date Finished: {books.dateFinished} */}
+                            </li>
                          )
                      })}
                  </ul>

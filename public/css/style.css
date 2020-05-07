@@ -1,27 +1,114 @@
+/* CSS Variables */
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
 body {
-    background-color: lightgrey;
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: .6rem 1.3rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    text-decoration: none;
+    border: 0;
+    
+}
+
+.btn a:hover {
+    background: var(--light);
+    color: var(--dark);
+    padding: .6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
 }
 
 /* Main Index */
 
-/* .home-header-img {
+.home-header {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        'showcase showcase showcase'
+        'showcase showcase showcase';
+}
+
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    background: url(https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80);
+    color: var(--light);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    box-shadow: var(--shadow);
+}
+
+.index-nav, .movie-gallery, .book-gallery, .album-gallery {
+/* display: grid; */
+    grid-gap: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    /* grid-template-columns: repeat(5, 1fr); */
+}
+
+/* home-header-img {
 
 }
 
 .home-header {
 
+} */
+
+.index-img {
+    width: 350px;
+    height: 225px;
 }
 
-.index-movie-img {
-    
 
-}
+/* .movie-index {
+    grid-area: showcase;
+    min-height: 300px;
+    min-width: auto;
+    background-size: cover;
+    background: url("https://www.syfy.com/sites/syfy/files/styles/1200x680/public/2018/11/getty_watching_movie.jpg");
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
 
-.index-movie {
+} */
 
-}
-
-.index-book-img {
+/* .index-book-img {
 
 }
 
@@ -35,7 +122,7 @@ body {
 
 .index-album {
 
-} */
+} */ 
 
 
 
@@ -53,21 +140,43 @@ body {
 
 .log-new-movie {
 
+} */
+
+.movie-gallery ul {
+    text-decoration: none;
 }
 
-.movie-gallery {
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
 
+li {
+    text-decoration: none;
 }
+
+
 
 .movie-gallery-info {
+    font-size: 15px;
 
-}
+} 
 
-.ind-movie-img {
-    max-width: 300px;
-    max-height: auto;
+/* .ind-movie-img {
+    
 
-}
+} */
 
 /* Book Index */
 
@@ -141,7 +250,7 @@ body {
     max-height: auto;
 }
 
-.ind-movie-img {
+.ind-movie-img, .ind-book-img, .ind-album-img {
     max-width: 200px;
     max-height: auto;
 }

@@ -8,7 +8,7 @@ class MovieIndex extends React.Component {
 
          return (
              <Default>
-             <div>
+             <div className="wrapper">
                  <div className="movie-header-img">
                      <img src="#"/>
                  </div>
@@ -19,11 +19,13 @@ class MovieIndex extends React.Component {
                  <ul className="movie-gallery">
                      {movies.map((movies, index) => {
                          return (
-                             <div className="movie-gallery-info">
-                                 <a href={`/movies/${movies._id}`}>{movies.title} - Date Watched: {movies.dateWatched}
-                                 <img src={movies.img} className="ind-movie-img"/></a>
-                                 
-                             </div>
+                            <li class-name="movie-gallery-info">
+                            <div className="ind-movie-img">
+                            <a href={`/movies/${movies._id}`}><img src={movies.img} className="ind-movie-img"/></a>
+                            </div>
+                            <p/>
+                            {/* {movies.title} - Date Finished: {movies.dateFinished} */}
+                       </li>
                          )
                      })}
                  </ul>
