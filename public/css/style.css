@@ -1,0 +1,152 @@
+body {
+    background-color: lightgrey;
+}
+
+/* Main Index */
+
+/* .home-header-img {
+
+}
+
+.home-header {
+
+}
+
+.index-movie-img {
+    
+
+}
+
+.index-movie {
+
+}
+
+.index-book-img {
+
+}
+
+.index-book {
+
+}
+
+.index-album-img {
+
+}
+
+.index-album {
+
+} */
+
+
+
+/* Movie Index */
+
+/* .movie-header {
+
+}
+
+.album-header-img {
+
+}
+
+.movie-header 
+
+.log-new-movie {
+
+}
+
+.movie-gallery {
+
+}
+
+.movie-gallery-info {
+
+}
+
+.ind-movie-img {
+    max-width: 300px;
+    max-height: auto;
+
+}
+
+/* Book Index */
+
+/* .book-header {
+
+
+}
+
+.book-header-img {
+
+}
+
+.book-header {
+
+}
+
+.log-new-book {
+
+}
+
+.book-gallery {
+
+}
+
+.book-gallery-info {
+
+} */ 
+
+.ind-book-img {
+    max-width: 300px;
+    max-height: auto;
+}
+
+
+/* Album Index
+
+.album-header {
+
+    
+}
+
+.album-header-img {
+
+}
+
+.album-header {
+
+}
+
+.log-album-new {
+
+}
+
+.album-gallery {
+
+}
+
+.album-gallery-info {
+
+} */
+
+.ind-album-img {
+
+    max-width: 200px;
+    max-height: auto;
+
+}
+
+.show-image {
+    max-width: 300px;
+    max-height: auto;
+}
+
+.ind-movie-img {
+    max-width: 200px;
+    max-height: auto;
+}
+
+
+/* footer {
+
+} */

@@ -30,12 +30,25 @@ mongoose.connection.on('open' , ()=>{});
 //Middleware
 //___________________
 //use public folder for static assets
+app.engine('jsx', require('express-react-views').createEngine());
+app.set('view engine', 'jsx');
 app.use(express.static('public'));
 // populates req.body with parsed info from forms - if no data from forms will return an empty object {}
 app.use(express.urlencoded({ extended: false }));// extended: false - does not allow nested objects in query strings
 app.use(express.json());// returns middleware that only parses JSON - may or may not need it depending on your project
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
+
+// == Controllers ===================== //
+
+const indexController = require('./controllers/index.js');
+app.use('/index', indexController);
+const moviesController = require('./controllers/movies.js');
+app.use('/movies', moviesController);
+const booksController = require('./controllers/books.js');
+app.use('/books', booksController);
+const albumsController = require('./controllers/albums.js');
+app.use('/albums', albumsController);
 //___________________
 // Routes
 //___________________
