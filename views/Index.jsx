@@ -19,21 +19,19 @@ class Home extends React.Component {
                     <div className="movie-index">
                         <a href="/movies"><h1>Movies</h1></a>
                        
-                     {/* <img src="https://www.syfy.com/sites/syfy/files/styles/1200x680/public/2018/11/getty_watching_movie.jpg" className="index-img"/> */}
+                    
 
                      
                     </div>
                     <div className="book-index">
                     <a href="/books"><h1>Books</h1></a>
-                     {/* <img src="https://media.treehugger.com/assets/images/2015/01/paper_book_folded_in_heart_shape.jpg.860x0_q70_crop-scale.jpg" className="index-img"/> */}
-                    {/* <a href="/books" class="btn">Books</a> */}
+                
                     </div>
 
                     <div className="album-index">
                     <a href="/albums"><h1>Albums</h1></a>
 
-                     {/* <img src="https://mk0lifedatacorpyd3vq.kinstacdn.com/wp-content/uploads/2016/07/head-phones.jpeg" className="index-img"/> */}
-                    {/* <a href="/albums" class="btn">Albums</a> */}
+                    
                  </div>
                  </div>
                  <footer className="index-footer">

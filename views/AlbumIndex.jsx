@@ -7,13 +7,10 @@ class AlbumIndex extends React.Component {
          return (
              <Default>
              <div>
-             <div className="album-header-img">
-                     <img src="#"/>
-                 </div>
                  <div className="showcase-album">
                  <h1>Album Journal</h1>
                  </div>
-                 <a href="albums/albumnew" className="log-new"><h2>Log New Album</h2></a>
+                 
                  <ul className="album-gallery">
                      {albums.map((albums, index) => {
                          return (
@@ -25,6 +22,7 @@ class AlbumIndex extends React.Component {
                          )
                      })}
                  </ul>
+                 <a href="albums/albumnew" className="log-new"><h2>Log New Album</h2></a>
                  <footer className="album-footer">
                      <h2>"Love is not a victory march/it's a cold and it's a broken hallelujah" ~ Leonard Cohen, 'Hallelujah'</h2>
                  </footer>

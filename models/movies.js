@@ -11,7 +11,7 @@ const movieSchema = new Schema ({
     platform: { type: String},
     img: String,
     review: { type: String},
-    rating: { type: Number, min: 0, max: 5 },
+    rating: { type: Number, min: 0, max: 5.0 },
     tags: { type: [String] },
 }, {timestamps: true});
 

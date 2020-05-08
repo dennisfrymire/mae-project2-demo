@@ -10,13 +10,10 @@ class BookIndex extends React.Component {
          return (
              <Default>
              <div>
-                <div className="book-header-img">
-                     <img src="#"/>
-                 </div>
                  <div className="book-header">
                  <h1>Book Journal</h1>
                  </div>
-                 <a href="books/booknew" className="log-new"><h2>Log a New Book</h2></a>
+                 
                  <ul className="book-gallery">
                      {books.map((books, index) => {
                          return (
@@ -30,6 +27,7 @@ class BookIndex extends React.Component {
                          )
                      })}
                  </ul>
+                 <a href="books/booknew" className="log-new"><h2>Log a New Book</h2></a>
                  <footer className="book-footer">
                      <h2>"All we have to decide is what to do with the time that is given us." ~ The Fellowship of the Ring, J.R.R. Tolkein</h2>
                  </footer>
