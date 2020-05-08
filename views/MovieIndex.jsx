@@ -15,7 +15,7 @@ class MovieIndex extends React.Component {
                  <div className="movie-header">
                  <h1>Movie Journal</h1>
                  </div>
-                 <a href="movies/movienew" className="log-new-movie">Log New Recently Watched Movie</a>
+                 <a href="movies/movienew" className="log-new"><h2>Log New Recently Watched Movie</h2></a>
                  <ul className="movie-gallery">
                      {movies.map((movies, index) => {
                          return (
@@ -30,7 +30,7 @@ class MovieIndex extends React.Component {
                      })}
                  </ul>
                  <footer className="movie-footer">
-                     "May the Force be with you." - Star Wars, 1977
+                     <h1>"May the Force be with you." - Star Wars, 1977</h1>
                  </footer>
                  
              </div>

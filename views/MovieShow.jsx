@@ -12,34 +12,32 @@ class MovieShow extends React.Component {
                  <div className="header">
                     <h1>{title} ({yearReleased})</h1>
                  </div>
-                 <div className="show-image">
-                 <img src={img}/>
+                 <div className="show-image-container">
+                 <img src={img} className="show-image"/>
                  </div>
-                 <div className="movie-info">
+                 <div className="info">
                      Genre: {genre}<p/>
                      Year Released: {yearReleased}<p/>
                      Date Watched: {dateWatched}<p/>
                      Platform/Streaming Service: {platform}<p/>
                 </div>
                 <div className="review">
-                    <h3>Review</h3>
-                    Rating: {rating}<p/>
-                    <div className="review-body">
-                        {review}
-                    </div>
+                    <p>Review: {review}</p>
+                    <p>Rating: {rating}</p>
+                </div>
                     <div className="edit-delete-form">
                     <form action={`/movies/${_id}/edit`}>
-                    <input type="submit" value='Edit'/>
+                    <input type="submit" value='Edit' className="edit-button"/>
                     </form>
                     <form action={`/movies/${_id}?_method=DELETE`} method="POST">
-                    <input type="submit" value="Delete from Journal"/>
+                    <input type="submit" value="Delete from Journal" className="delete-button"/>
                     </form>
                     </div>
                 </div>
     
 
             
-             </div>
+             {/* </div> */}
              </Default>
          )
     }

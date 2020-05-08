@@ -4,19 +4,30 @@
     --primary: #ddd;
     --dark: #333;
     --light: #fff;
-    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --shadow: 0 2px 10px rgba(104, 104, 104, 0.8);
 }
 
 html {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--dark);
+    font-family: 'Mont';
+    color: var(--light);
+    background: var(--dark);
 }
 
-body {
+/* body {
     background: #ccc;
     margin: 30px 50px;
     line-height: 1.4;
+} */
+
+h1 {
+    color: var(--light);
+    font-family: 'Acme', sans-serif;
+}
+
+p, h2 {
+    color: var(--light);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn {
@@ -54,8 +65,7 @@ body {
 }
 
 .showcase {
-    grid-area: showcase;
-    min-height: 400px;
+    min-height: 125px;
     background: url(https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80);
     color: var(--light);
     background-size: cover;
@@ -69,14 +79,24 @@ body {
     box-shadow: var(--shadow);
 }
 
+
+
 .index-nav, .movie-gallery, .book-gallery, .album-gallery {
-/* display: grid; */
+    display: flex;
     grid-gap: 20px;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    /* display: flex; */
+    justify-content: space-evenly;
     list-style: none;
-    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.log-new {
+    color: var(--light);
+    margin-bottom: 20px;
+
 }
 
 /* home-header-img {
@@ -93,20 +113,52 @@ body {
 }
 
 
-/* .movie-index {
-    grid-area: showcase;
-    min-height: 300px;
-    min-width: auto;
-    background-size: cover;
-    background: url("https://www.syfy.com/sites/syfy/files/styles/1200x680/public/2018/11/getty_watching_movie.jpg");
+.movie-index {
+    display: grid;
+    
+    /* width: 350px;
+    height: 225px; */
+    background-size: 400px 325px;
+    background-image: url("https://www.syfy.com/sites/syfy/files/styles/1200x680/public/2018/11/getty_watching_movie.jpg");
+    background-position: 50%;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+    justify-content: flex-end;
     box-shadow: var(--shadow);
 
-} */
+}
+
+.book-index {
+    display: grid;
+    /* width: 350px;
+    height: 225px; */
+    background-size: 400px 325px;
+    background-image: url("https://media.treehugger.com/assets/images/2015/01/paper_book_folded_in_heart_shape.jpg.860x0_q70_crop-scale.jpg");
+    background-position: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    box-shadow: var(--shadow);
+}
+
+.album-index {
+    display: grid;
+    /* width: 350px;
+    height: 225px; */
+    background-size: 500px 425px;
+    background-image: url(https://mk0lifedatacorpyd3vq.kinstacdn.com/wp-content/uploads/2016/07/head-phones.jpeg);
+    background-position: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    box-shadow: var(--shadow);
+}
 
 /* .index-book-img {
 
@@ -127,6 +179,22 @@ body {
 
 
 /* Movie Index */
+
+.movie-header {
+    min-height: 125px;
+    background-image: url(https://images.unsplash.com/photo-1510511450816-30c68106b199?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    color: var(--dark);
+    background-size: 80%;
+    background-position: center;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    box-shadow: var(--shadow);
+}
+
 
 /* .movie-header {
 
@@ -166,6 +234,29 @@ li {
     text-decoration: none;
 }
 
+.info {
+   color: var(--light); 
+   font-size: large;  
+   font-family: 'Montserrat', sans-serif; 
+}
+
+.review {
+    color: var(--light);
+    font-size: x-large;
+    margin-bottom: 5rem;
+}
+
+.edit-delete-form {
+    display: flex;
+}
+
+.edit-button {
+    flex: 1;
+}
+
+.delete-button {
+    flex: 2;
+}
 
 
 .movie-gallery-info {
@@ -180,7 +271,22 @@ li {
 
 /* Book Index */
 
-/* .book-header {
+
+
+.book-header {
+    min-height: 125px;
+    background-image: url(https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    color: var(--dark);
+    background-size: 80%;
+    background-position: center;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    box-shadow: var(--shadow);
+}
 
 
 }
@@ -211,7 +317,34 @@ li {
 }
 
 
-/* Album Index
+/* Album Index */
+
+.album-gallery {
+display: grid;
+grid-gap: 20px;
+padding: 0;
+margin-top: 5rem;
+margin-bottom: 5rem;
+/* display: flex; */
+/* justify-content: space-between; */
+list-style: none;
+grid-template-columns: repeat(4, 1fr);
+}
+
+.showcase-album {
+    min-height: 150px;
+    background: url(https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    color: var(--light);
+    background-size: 67%;
+    background-position: center;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    box-shadow: var(--shadow);
+}
 
 .album-header {
 
@@ -236,7 +369,7 @@ li {
 
 .album-gallery-info {
 
-} */
+} 
 
 .ind-album-img {
 
@@ -245,8 +378,12 @@ li {
 
 }
 
+.show-image-container {
+    margin-bottom: 3rem;
+}
+
 .show-image {
-    max-width: 300px;
+    max-width: 250px;
     max-height: auto;
 }
 
@@ -255,7 +392,120 @@ li {
     max-height: auto;
 }
 
+/* .edit-page {
+    padding: 0px 10px;
+    font-family: Montserrat', sans-serif;';
+    font-weight: 500;
+    color: var(--light);
+  } */
 
-/* footer {
+  .edit-page {
+    
+        background: var(--light);
+        color: var(--dark);
+        border-radius: 0 10px 10px 0;
+        padding: 15px;
+        box-sizing: border-box;
+        overflow: auto;
+      }
+  
 
-} */
+
+.index-footer {
+    min-height: 50px;
+    background: url(https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80);
+    color: var(--light);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    box-shadow: var(--shadow);
+}
+
+.movie-footer {
+    min-height: 50px;
+    background: url(https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80);
+    color: var(--light);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    box-shadow: var(--shadow);
+}
+
+.book-footer {
+    min-height: 50px;
+    background: url(https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80);
+    color: var(--light);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    box-shadow: var(--shadow);
+}
+
+.album-footer {
+    min-height: 50px;
+    background: url(https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80);
+    color: var(--light);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    box-shadow: var(--shadow);
+}
+
+/* FORMS */
+
+  
+  form {
+      font-family: 'Montserrat', sans-serif;
+  }
+  
+  input[type="submit"] {
+    background-color: var(--light);
+    color: var(--dark);
+    width: calc(var(--reg-width) + 20rem);
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+  }
+  
+  input[type="submit"]:hover {
+    box-shadow: 0 8px 16px rgba(255, 180, 131, 0.9);
+    cursor: pointer;
+    background: var(--light);
+  
+  }
+  
+  input[type="submit"]:focus {
+    box-shadow: 0 8px 16px rgba(255, 180, 131, 0.9);
+  }
+  
+  input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--light);
+  }
+  
+  
+  textarea {
+    /* resize: ; */
+    height: 300px;
+   }

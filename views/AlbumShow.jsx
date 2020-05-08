@@ -16,15 +16,13 @@ class AlbumShow extends React.Component {
                  <img src={img}/>
                  </div>
                  <p/>
-                 <div className="album-info">
+                 <div className="info">
                      Genre: {genre}<p/>
                      Date Finished: {dateFinished}<p/>
                 </div>
                 <div className="review">
-                    <h3>Review</h3>
-                    Rating: {rating}<p/>
-                    <div className="review-body">
-                        {review}
+                    <p>Review: {review}</p>
+                    <p>Rating: {rating}</p>
                 </div>
                     <div className="edit-delete-form">
                     <form action={`/albums/${_id}/edit`}>
@@ -38,7 +36,7 @@ class AlbumShow extends React.Component {
     
 
             
-             </div>
+             
              </Default>
          )
     }

@@ -16,7 +16,7 @@ class BookIndex extends React.Component {
                  <div className="book-header">
                  <h1>Book Journal</h1>
                  </div>
-                 <a href="books/booknew" className="log-book-new">Log a New Book</a>
+                 <a href="books/booknew" className="log-new"><h2>Log a New Book</h2></a>
                  <ul className="book-gallery">
                      {books.map((books, index) => {
                          return (
@@ -31,7 +31,7 @@ class BookIndex extends React.Component {
                      })}
                  </ul>
                  <footer className="book-footer">
-                     "All we have to decide is what to do with the time that is given us." - The Fellowship of the Ring, J.R.R. Tolkein
+                     <h2>"All we have to decide is what to do with the time that is given us." ~ The Fellowship of the Ring, J.R.R. Tolkein</h2>
                  </footer>
                  
              </div>

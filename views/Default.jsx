@@ -5,6 +5,7 @@ class Default extends React.Component {
         return (
         <html>
             <head>
+            <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap" rel="stylesheet"></link>
             <script src="https://kit.fontawesome.com/3bf8ed5b38.js" crossorigin="anonymous"></script>
                 <link rel="stylesheet" href="/css/style.css"/>
                 <a href="/index">Home</a>

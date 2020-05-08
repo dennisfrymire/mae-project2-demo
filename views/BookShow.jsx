@@ -12,20 +12,18 @@ class BookShow extends React.Component {
                  <div className="header">
                     <h1>{title}</h1>
                  </div>
-                 {/* <div className="show-image">
-                 {img}
-                 </div> */}
-                 <div className="book-info">
+                 <div className="show-image-container">
+                 <img src={img} className="show-image"/>
+                 </div>
+                 <div className="info">
                      Genre: {genre}<p/>
                      Year Released: {yearReleased}<p/>
                      Date Finished: {dateFinished}<p/>
                 </div>
                 <div className="review">
-                    <h3>Review</h3>
-                    Rating: {rating}<p/>
-                    <div className="review-body">
-                        {review}
-                    </div>
+                    <p>Review: {review}</p>
+                    <p>Rating: {rating}</p>
+                </div>
                     <div className="edit-delete-form">
                     <form action={`/books/${_id}/edit`}>
                     <input type="submit" value='Edit'/>
@@ -38,7 +36,7 @@ class BookShow extends React.Component {
     
 
             
-             </div>
+             
              </Default>
          )
     }
