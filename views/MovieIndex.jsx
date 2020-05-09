@@ -9,9 +9,6 @@ class MovieIndex extends React.Component {
          return (
              <Default>
              <div className="wrapper">
-                 {/* <div className="movie-header-img">
-                     <img src="#"/>
-                 </div> */}
                  <div className="movie-header">
                  <h1>Movie Journal</h1>
                  </div>
@@ -28,7 +25,7 @@ class MovieIndex extends React.Component {
                          )
                      })}
                  </ul>
-                 <a href="movies/movienew" className="log-new"><h2>Log New Watched Movie</h2></a>
+                 <a href="movies/movienew" className="log-new"><h2>Log New Movie</h2></a>
                  <footer className="movie-footer">
                      <h1>"May the Force be with you." - Star Wars, 1977</h1>
                  </footer>

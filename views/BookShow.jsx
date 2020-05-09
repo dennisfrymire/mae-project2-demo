@@ -4,11 +4,11 @@ const Default = require('./Default');
 class BookShow extends React.Component {
     render() {
 
-        const { _id, title, genre, yearReleased, dateFinished, img, review, rating } = this.props.book;
+        const { _id, title, author, genre, yearReleased, dateFinished, img, review, rating } = this.props.book;
 
          return (
              <Default>
-             <div>
+             <div className="show-wrapper">
                  <div className="header">
                     <h1>{title}</h1>
                  </div>
@@ -16,15 +16,17 @@ class BookShow extends React.Component {
                  <img src={img} className="show-image"/>
                  </div>
                  <div className="info">
+                     Author: {author}<p/>
                      Genre: {genre}<p/>
                      Year Released: {yearReleased}<p/>
                      Date Finished: {dateFinished}<p/>
                 </div>
                 <div className="review">
-                    <p>Review: {review}</p>
                     <p>Rating: {rating}</p>
+                    <p>Review: {review}</p>
+                    
                 </div>
-                    <div className="edit-delete-form">
+                <div>
                     <form action={`/books/${_id}/edit`}>
                     <input type="submit" value='Edit'/>
                     </form>

@@ -14,9 +14,10 @@ class AlbumNew extends React.Component {
                 Genre: <input type="text" name="genre" /><br/>
                 Year Released: <input type="number" placeholder="1985" name="yearReleased"/><br/>
                 Date Finished: <input type="text" placeholder="May 1, 2020" name="dateWatched"/><br/>
-                Image: <input type="text" placeholder="Copy and paste image URL here" name="img"/><br/>
-                Review: <input type="text" name="review"/><br/>
+                Image (Grab a URL of the album cover from another website. Amazon usually works great.): <input type="text" placeholder="Copy and paste image URL here" name="img"/><br/>
                 Rating: <input type="number" placeholder="1-5" name="rating"/><br/>
+                Review: <input type="text" name="review" id="review"/><br/>
+                
             
                   <input type="submit" name="" value="Log Album"/>
                </form>

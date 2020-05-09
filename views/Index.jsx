@@ -7,12 +7,9 @@ class Home extends React.Component {
          return (
              <Default>
              <div className="wrapper">
-                 {/* <div className="home-header-img">
-                     
-                 </div> */}
                  <div classname="home-header">
                      <div className="showcase">
-                 <h1>Arts and Entertainment Journal</h1>
+                 <h1>Arts & Entertainment Journal</h1>
                     </div>
                  </div>
                  <div className="index-nav">

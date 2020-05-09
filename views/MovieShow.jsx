@@ -8,12 +8,12 @@ class MovieShow extends React.Component {
 
          return (
              <Default>
-             <div>
-                 <div className="header">
+             <div className="show-wrapper">
+                 <div>
                     <h1>{title} ({yearReleased})</h1>
                  </div>
                  <div className="show-image-container">
-                 <img src={img} className="show-image"/>
+                    <img src={img} className="show-image"/>
                  </div>
                  <div className="info">
                      Genre: {genre}<p/>
@@ -22,8 +22,9 @@ class MovieShow extends React.Component {
                      Platform/Streaming Service: {platform}<p/>
                 </div>
                 <div className="review">
-                    <p>Review: {review}</p>
                     <p>Rating: {rating}</p>
+                    <p>Review: {review}</p>
+                    
                 </div>
                     <div className="edit-delete-form">
                     <form action={`/movies/${_id}/edit`}>
@@ -34,10 +35,7 @@ class MovieShow extends React.Component {
                     </form>
                     </div>
                 </div>
-    
 
-            
-             {/* </div> */}
              </Default>
          )
     }

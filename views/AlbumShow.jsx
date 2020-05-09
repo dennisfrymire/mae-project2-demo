@@ -8,7 +8,7 @@ class AlbumShow extends React.Component {
 
          return (
              <Default>
-             <div>
+             <div className="show-wrapper">
                  <div className="header">
                     <h1>{title} - {artist} ({yearReleased})</h1>
                  </div>
@@ -21,10 +21,11 @@ class AlbumShow extends React.Component {
                      Date Finished: {dateFinished}<p/>
                 </div>
                 <div className="review">
-                    <p>Review: {review}</p>
                     <p>Rating: {rating}</p>
+                    <p>Review: {review}</p>
+                    
                 </div>
-                    <div className="edit-delete-form">
+                    <div>
                     <form action={`/albums/${_id}/edit`}>
                     <input type="submit" value='Edit'/>
                     </form>

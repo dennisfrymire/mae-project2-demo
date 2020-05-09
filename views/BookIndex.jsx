@@ -9,7 +9,7 @@ class BookIndex extends React.Component {
 
          return (
              <Default>
-             <div>
+             <div class="wrapper">
                  <div className="book-header">
                  <h1>Book Journal</h1>
                  </div>
@@ -22,7 +22,6 @@ class BookIndex extends React.Component {
                                  <a href={`/books/${books._id}`}><img src={books.img} className="ind-book-img"/></a>
                                  </div>
                                  <p/>
-                                 {/* {books.title} - Date Finished: {books.dateFinished} */}
                             </li>
                          )
                      })}

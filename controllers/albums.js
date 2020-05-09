@@ -70,10 +70,10 @@ router.put('/:id', (req, res) => {
     });
 });
 
-Album.create(Album_Seed, (err, data) => {
-  if (err) console.log(err.message)
-  console.log('added provided Album data')
-})
+// Album.create(Album_Seed, (err, data) => {
+//   if (err) console.log(err.message)
+//   console.log('added provided Album data')
+// })
 
 Album.countDocuments({}, (err, data) => {
     if (err) console.log(err.message)

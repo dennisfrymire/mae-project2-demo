@@ -6,8 +6,8 @@ class AlbumIndex extends React.Component {
         const { albums } = this.props;
          return (
              <Default>
-             <div>
-                 <div className="showcase-album">
+             <div class="wrapper">
+                 <div className="album-header">
                  <h1>Album Journal</h1>
                  </div>
                  
