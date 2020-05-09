@@ -277,17 +277,16 @@ grid-template-columns: repeat(4, 1fr);
      margin-bottom: 1rem;
  }
  
- .edit-delete-form {
+ /* .edit-delete-form {
      display: inline-flex;
      justify-content: space-around;
      align-content: flex-start;
-     /* grid-gap: 1px; */
      
      font-family:'Montserrat', sans-serif;
      /* margin: 25px; */
      list-style: none;
      grid-template-columns: repeat(9, 1fr);
- }
+ } */
  
  .edit-delete-form {
  

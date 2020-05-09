@@ -30,7 +30,7 @@ module.exports = [
     rating: 3,
     },
     {
-     title: 'Sing in the Second City',
+     title: 'Sin in the Second City',
      author: 'Karen Abbott',
      genre: 'Historical Fiction',
      yearReleased: 2008,

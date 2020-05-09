@@ -10,8 +10,8 @@ const albumSchema = new Schema ({
     yearReleased: Number,
     dateFinished: String,
     img: String,
-    review: String,
     rating: { type: Number, min: 0, max: 5 },
+    review: String,
 }, {timestamps: true});
 
 // == CREATE MODEL FROM SCHEMA ===================

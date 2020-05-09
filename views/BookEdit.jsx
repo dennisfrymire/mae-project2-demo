@@ -20,7 +20,7 @@ class BookEdit extends React.Component {
                 Review: <input type="text" name="review" defaultValue={review}/><br/>
    
                 
-                  <input type="submit" name="" value="Log Movie"/>
+                  <input type="submit" name="" value="Log Book"/>
                </form>
           </div>
           </Default>
