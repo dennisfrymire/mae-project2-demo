@@ -7,6 +7,8 @@ A blog/journal specifically to keep track of recent movies you’ve watched, boo
 
 ## Technologies Used
 
+- HTML
+- CSS
 - JSX
 - MongoDB
 - Mongoose
