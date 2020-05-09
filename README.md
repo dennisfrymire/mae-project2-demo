@@ -48,6 +48,8 @@ Images on the site are taken from unsplash.com.
 
 - I would to continue to tweak the design overall.
 
+- More useful navigation - being able to go back and forth between journal entries with 'next' and 'last' buttons
+
 - Making the page responsive for tablet and mobile.
 
 - The index page of each category has a movie quote, book quote, or song lyric. My initial idea was to have arrays of quotes that would be randomly generated each time the pages are reloaded.
